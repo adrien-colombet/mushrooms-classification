@@ -2,7 +2,7 @@
 
 ## Repo structure
 
-'''Bash
+```bash
 .
 ├── LICENSE
 ├── README.md
@@ -24,7 +24,7 @@
     ├── edible_mushrooms_dataset_preparation.ipynb
     ├── edible_mushrooms_order_classification.ipynb
     └── images_exploration.ipynb
-'''
+```
 
 Dataset contains data-frames:
 * dataframe observation_mushooms.csv containing initial data
