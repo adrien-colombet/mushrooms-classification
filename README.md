@@ -7,23 +7,24 @@
 ├── LICENSE
 ├── README.md
 ├── dataset
-│   ├── edible_mushrooms.csv
-│   ├── family
-│   │   ├── test
-│   │   └── train
 │   ├── images
-│   ├── observations_mushroom.csv
-│   ├── order
-│   │   ├── test
-│   │   └── train
-│   └── species
+│   ├── order_classfication
+|   |   ├── edible_mushrooms.csv
+│   │   ├── train
+│   |   ├── test
+│   │   └── validation
+│   └── comestible_classification
+│       ├── observations_mushroom.csv       
+|       ├── train
 │       ├── test
-│       └── train
+│       └── validation
 └── nb
-    ├── dataset_widget.ipynb
-    ├── edible_mushrooms_dataset_preparation.ipynb
-    ├── edible_mushrooms_order_classification.ipynb
-    └── images_exploration.ipynb
+    ├── iteration_0 
+    |   ├── dataset_widget.ipynb
+    |   ├── edible_mushrooms_dataset_preparation.ipynb
+    |   ├── edible_mushrooms_order_classification.ipynb
+    |   └── images_exploration.ipynb
+    ├── iteration_1 
 ```
 
 Dataset contains data-frames:
@@ -32,10 +33,9 @@ Dataset contains data-frames:
 
 Directories:
 * images : contains unstructured images
-* first row : classification type
-* second row : classes for the specific classification problem
-* third row : to store data for training and data for testing
-
+* first level : classification type
+* second level : to store data for training and data for testing
+* second level : classes for the specific classification problem
 
 ## Commit rules
 
