@@ -1,8 +1,9 @@
 import streamlit as st
-import dataset_crop, edible_order_predict
+import dataset_crop, edible_order_predict, segment
 
 PAGES = {
     "Dataset preparation": dataset_crop,
+    "Segmentation" : segment,
     "Predictions": edible_order_predict
 }
 
