@@ -1,10 +1,12 @@
 import streamlit as st
-import dataset_crop, edible_order_predict, segment
+import dataset_crop, edible_order_predict, segment, models, statement
 
 PAGES = {
+    "Problem statement" : statement,
+    "Models" : models,
+    "Predictions": edible_order_predict,
     "Dataset preparation": dataset_crop,
-    "Segmentation" : segment,
-    "Predictions": edible_order_predict
+    "Segmentation" : segment
 }
 
 def main():
