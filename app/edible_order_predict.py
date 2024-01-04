@@ -24,6 +24,46 @@ def app():
                                         dest_path=dest_path,
                                         unzip=False)
 
+    url_edibility_model = '1oy3G68X8IJiz5dso0hC9dKDsYEjoFAdK'
+    dest_path = './model/model_mobile_mixed.hdf5'
+
+    if not os.path.exists(dest_path):
+        gdd.download_file_from_google_drive(file_id=url_edibility_model,
+                                        dest_path=dest_path,
+                                        unzip=False)                                        
+
+    url_order_model = '1es9HvkehspsPr2K1cIkm9mG26iK1uq2'
+    dest_path = './model/TL_InceptionV3.hdf5'
+
+    if not os.path.exists(dest_path):
+        gdd.download_file_from_google_drive(file_id=url_order_model,
+                                        dest_path=dest_path,
+                                        unzip=False)
+
+    url_order_model = '1jYBfQKPssgLiTSmGIP41wdXkNp8wqZSf'
+    dest_path = './model/TL_Xception.hdf5'
+
+    if not os.path.exists(dest_path):
+        gdd.download_file_from_google_drive(file_id=url_order_model,
+                                        dest_path=dest_path,
+                                        unzip=False)
+
+    url_order_model = '120NkN4bkNRPWqlEBWXbk9VF1zuHZeSY5'
+    dest_path = './model/TL_VGG19.hdf5'
+
+    if not os.path.exists(dest_path):
+        gdd.download_file_from_google_drive(file_id=url_order_model,
+                                        dest_path=dest_path,
+                                        unzip=False)
+
+    url_order_model = '1E8XbZIodks4jKZ65VqKS3BkDGnySTyzb'
+    dest_path = './model/TL_ResNet50V2.hdf5'
+
+    if not os.path.exists(dest_path):
+        gdd.download_file_from_google_drive(file_id=url_order_model,
+                                        dest_path=dest_path,
+                                        unzip=False)                                                        
+
     url_edibility_model = '1PLWvsMlDTy-dQkL_Jahxh3RHqbhWBmKu'
     dest_path = './model/VF_ResNet50V2.hdf5'
 
